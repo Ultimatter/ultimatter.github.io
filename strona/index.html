@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uruchomienie gifu po kliknięciu</title>
+  </head>
+  <body>
+   <audio id="muzyka" src="muzyka.mp3"></audio>
+    <img id="gif" src="gifek1.png" onclick="uruchomGif()">
+
+    <script>
+      function uruchomGif() {
+        const imgElement = document.getElementById('gif');
+
+        imgElement.src = 'gifek.gif';
+		
+        const audioElement = document.getElementById('muzyka');
+
+        audioElement.play();
+      }
+    </script>
+  </body>
+</html>

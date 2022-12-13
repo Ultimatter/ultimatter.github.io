@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uruchomienie gifu i muzyki po kliknięciu</title>
+  </head>
+  <body>
+    <audio id="muzyka" src="muzyka.mp3"></audio>
+    <img id="gif" src="gifek.gif" onclick="uruchomMuzyke()">
+
+    <script>
+      function uruchomMuzyke() {
+        // pobieramy element audio z naszej strony
+        const audioElement = document.getElementById('muzyka');
+
+        // uruchamiamy odtwarzanie muzyki
+        audioElement.play();
+      }
+    </script>
+  </body>
+</html>
